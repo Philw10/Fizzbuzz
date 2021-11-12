@@ -5,14 +5,25 @@ public class Main {
     public static void main(String[] args) {
 
         for (int n=1; n <= 100; n++) {
-            if (n % 3 == 0 && n % 5 == 0)
-                System.out.println("Fizzbuzz");
-            else if (n % 5 == 0)
-                System.out.println("Buzz");
-            else if (n % 3 == 0)
-                System.out.println("Fizz");
-            else
+            String displayValue = "";
+            if (n % 3 == 0)
+                displayValue += "Fizz";
+
+            if (n % 5 == 0)
+                displayValue += "Buzz";
+
+            if (n % 7 == 0)
+                displayValue += "Bang";
+
+            if (n % 11 == 0)
+                displayValue = "Bong";
+
+
+            if (displayValue == "")
                 System.out.println(n);
+            else
+                System.out.println(displayValue);
+
         }
     }
 }
