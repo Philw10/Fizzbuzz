@@ -4,12 +4,12 @@ public class Main {
 
     public static void main(String[] args) {
 
-        for (int n=1; n <= 100; n++) {
+        for (int n = 1; n <= 100; n++) {
             String displayValue = "";
             if (n % 3 == 0)
                 displayValue += "Fizz";
 
-            if (n % 13 ==0)
+            if (n % 13 == 0)
                 displayValue += "Fezz";
 
             if (n % 5 == 0)
@@ -18,9 +18,7 @@ public class Main {
             if (n % 7 == 0)
                 displayValue += "Bang";
 
-            if (n % 11 == 0 && n % 13 == 0)
-                displayValue = "FezzBong";
-            else if (n % 11 ==0)
+            if (n % 11 == 0)
                 displayValue = "Bong";
 
 
@@ -28,6 +26,7 @@ public class Main {
                 System.out.println(n);
             else
                 System.out.println(displayValue);
+
 
         }
     }
