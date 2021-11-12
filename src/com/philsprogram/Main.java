@@ -18,7 +18,9 @@ public class Main {
             if (n % 7 == 0)
                 displayValue += "Bang";
 
-            if (n % 11 == 0)
+            if (n % 11 == 0 && n % 13 == 0)
+                displayValue = "FezzBong";
+            else if (n % 11 ==0)
                 displayValue = "Bong";
 
 
