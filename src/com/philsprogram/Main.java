@@ -9,6 +9,9 @@ public class Main {
             if (n % 3 == 0)
                 displayValue += "Fizz";
 
+            if (n % 13 ==0)
+                displayValue += "Fezz";
+
             if (n % 5 == 0)
                 displayValue += "Buzz";
 
